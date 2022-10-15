@@ -20,7 +20,7 @@ spec:
      paths:
      - path: /
        pathType: Prefix
-     - backend:
+       backend:
         service:
        {{- if lower .Values.sename}}
           name: payment-service-{{ lower .Values.sename }}-svc
