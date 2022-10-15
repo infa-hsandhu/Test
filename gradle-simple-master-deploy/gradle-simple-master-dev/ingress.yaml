@@ -38,8 +38,9 @@ spec:
         pathType: Prefix
         backend:
           service:
-          {{- if lower .Values.sename}}
-            name:  gradle-simple-master-service-{{ lower .Values.sename }}-svc
+            {{- if lower .Values.sename}}
+             name:  gradle-simple-master-service-{{ lower .Values.sename }}-svc
             {{- else }}
-            name:  gradle-simple-master-service-svc
+             name:  gradle-simple-master-service-svc
+            {{- end }}
             port: 8080
