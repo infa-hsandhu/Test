@@ -27,4 +27,5 @@ spec:
        {{- else }}
           name: payment-service-svc
        {{- end }}
-          port: 8080
+          port: 
+           number: 8080
